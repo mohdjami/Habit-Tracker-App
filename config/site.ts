@@ -23,7 +23,7 @@ export const siteConfig: SiteConfig = {
     author: "https://github.com/mohdjami",
   },
   links: {
-    github: "https://github.com/mohdjami/Habit-Tracker",
+    github: "https://github.com/mohdjami/Habit-Tracker-app",
   },
   ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpg`,
 }
