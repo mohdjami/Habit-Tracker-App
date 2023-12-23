@@ -3,7 +3,7 @@ import Image from "next/image"
 import HeadingText from "@/components/heading-text"
 import { ImageFrame } from "@/components/image-frame"
 
-export default function Overview() {
+export default function Overview(props) {
   return (
     <section className="container py-12 lg:py-20" id="overview">
       <div className="flex flex-col gap-8 text-center">
@@ -14,8 +14,7 @@ export default function Overview() {
           <ImageFrame>
             <Image
               className="rounded-lg"
-              src="/images/activities.png
-              "
+              src="/images/activities.png"
               width="1280"
               height="720"
               alt="Showcase image"
@@ -24,8 +23,7 @@ export default function Overview() {
           <ImageFrame>
             <Image
               className="rounded-lg"
-              src="/images/logging.png
-              "
+              src="/images/logging.png"
               width="1280"
               height="720"
               alt="Showcase image"
@@ -34,8 +32,7 @@ export default function Overview() {
           <ImageFrame>
             <Image
               className="rounded-lg"
-              src="/images/dashboard.png
-              "
+              src="/images/dashboard.png"
               width="1280"
               height="720"
               alt="Showcase image"
@@ -53,8 +50,7 @@ export default function Overview() {
           <ImageFrame>
             <Image
               className="rounded-lg"
-              src="/images/log-history.png
-              "
+              src="/images/log-history.png"
               width="1280"
               height="720"
               alt="Showcase image"
