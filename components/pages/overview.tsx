@@ -3,7 +3,7 @@ import Image from "next/image"
 import HeadingText from "@/components/heading-text"
 import { ImageFrame } from "@/components/image-frame"
 
-export default function Overview(props) {
+export default function Overview() {
   return (
     <section className="container py-12 lg:py-20" id="overview">
       <div className="flex flex-col gap-8 text-center">
