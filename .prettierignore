@@ -2,5 +2,5 @@ dist
 node_modules
 .next
 package.json
-pnpm-lock.yaml
+npm-lock.yaml
 *.md
