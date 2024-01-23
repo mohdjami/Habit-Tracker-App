@@ -102,8 +102,8 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
                 </FormItem>
               )}
             />
-            {showSend ? (
-              <Button disabled={!showSend} type="submit">
+            {!showSend ? (
+              <Button disabled={showSend} type="submit">
                 Send login link
               </Button>
             ) : (

@@ -12,6 +12,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
+import { Checkbox } from "@/components/ui/checkbox"
+import { CheckboxWithText } from "@/components/checkbox-with-text"
 import { Icons } from "@/components/icons"
 
 interface LogsDeleteDialogProps {
@@ -52,19 +54,21 @@ export function LogsDeleteDialog({
             This action cannot be undone.
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction
-            onClick={handleDelete}
-            className="bg-red-600 focus:ring-red-600"
-          >
-            {isLoading ? (
-              <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-            ) : (
-              <Icons.trash className="mr-2 h-4 w-4" />
-            )}
-            <span>Delete</span>
-          </AlertDialogAction>
+        <AlertDialogFooter className="flex flex-auto justify-between">
+          <div className="flex justify-center space-x-4 align-middle">
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogAction
+              onClick={handleDelete}
+              className="bg-red-600 focus:ring-red-600"
+            >
+              {isLoading ? (
+                <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+              ) : (
+                <Icons.trash className="mr-2 h-4 w-4" />
+              )}
+              <span>Delete</span>
+            </AlertDialogAction>
+          </div>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
